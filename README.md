@@ -5,7 +5,7 @@ The repository is based on the imageComparer script. This code allows the user t
 
 ## Disclaimers
 + The script has been tested on Windows machines only
-+ **Images must be placed in specific folders and must have the same name in order to be compared (as will be desribed later). Also the folder in which the images are store must have the same name**. To facilitate this, some folders have been included to serve as examples. Therefore the script can be launched immediately to test how it works
++ **Images must be placed in specific folders and must have the same name in order to be compared (as will be described later). Also the folder in which the images are stored must have the same name for the two simulations**. To facilitate this, some folders have been included to serve as examples. Therefore the script can be launched immediately to test how it works
 + <ins>Due to the above, I am working on a script that conveniently saves photos and slices from ParaView into the correct folders so that it can be used in combination with this script. As soon as it is made public I will link it to this README file</ins>
 
 ## Installation
@@ -17,7 +17,7 @@ Inside `2 - PostProcessing` there are two folders that serve as examples.
     - Colorama
     - pygame
 + The following variables can be changed in `imageComparer`:
-    - `CFD_folder`: put the name of the folder where the simulation results are located. By default it is `2 - PostProcessing`. This folder must be in the same folder where the script is located
+    - `CFD_folder`: put the name of the folder where the simulation are located. By default it is `2 - PostProcessing`. This folder must be in the same folder where the script is located
     - `figure_folder`: name of the folder inside `2 - PostProcessing\simulation_1\` in which the different folders with the figures are present. By default the figures are in the following path: `2 - PostProcessing\simulation_1\0_Figures\` so `figure_folder = '0_Figures'`
     - `screen_scaling_factor`: it is a scaling factor that is used if a screen zoom has been set in the Windows settings. In this case the value to enter is value%/100. By default it is set to 1, so 100%
 + Images within folders MUST contain a number in the name, so that they can be sorted in ascending order and displayed to the user in the correct order
@@ -26,7 +26,6 @@ Inside `2 - PostProcessing` there are two folders that serve as examples.
 1. The script asks the user which two simulations to open. The folders that appear are the ones inside `2 - PostProcessing`, so they can be copied and pasted
 2. At this point the script shows the folders in which the images are present within `figure_folder`, and which are common to the two simulations. Only folders that are not empty are shown. The user enters the number and pygame is launched to show the images
 3. With the arrows it is possible to scroll between the images, while with `q` the user can move from one simulation to another. The photo directory is shown in the bottom left corner (in the examples it is not possible to see it because the background and text are black)
-4. Pressing `ESC` closes pygame, and gives the user the option to select another set of images
+4. `ESC` closes pygame, and gives the user the option to select another set of images
 5. By entering *99*, the user returns to the simulation selection
-
-
+5. By entering *0*, the script ends
