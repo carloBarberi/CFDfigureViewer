@@ -6,7 +6,7 @@ The repository is based on the imageComparer script. This code allows the user t
 ## Disclaimers
 + The script has been tested on Windows machines only
 + **Images must be placed in specific folders and must have the same name in order to be compared (as will be described later). Also the folder in which the images are stored must have the same name for the two simulations**. To facilitate this, some folders have been included to serve as examples. Therefore the script can be launched immediately to test how it works
-+ <ins>Due to the above, I am working on a script that conveniently saves photos and slices from ParaView into the correct folders so that it can be used in combination with this script. As soon as it is made public I will link it to this README file</ins>
++ <ins>I recommend using this script in combination with [paraviewMacros](https://github.com/carloBarberi/paraviewMacros). This repository allows you to save photos in the correct folders and with the correct names for `imageComparer.py` </ins>
 
 ## Installation
 In order to use the script it is necessary to download this repository and insert the results of the simulations into the `2 - PostProcessing` folder.
