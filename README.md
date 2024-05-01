@@ -26,6 +26,8 @@ Inside `2 - PostProcessing` there are two folders that serve as examples.
 1. The script asks the user which two simulations to open. The folders that appear are the ones inside `2 - PostProcessing`, so they can be copied and pasted
 2. At this point the script shows the folders in which the images are present within `figure_folder`, and which are common to the two simulations. Only folders that are not empty are shown. The user enters the number and pygame is launched to show the images
 3. With the arrows it is possible to scroll between the images, while with `q` the user can move from one simulation to another. The photo directory is shown in the bottom left corner (in the examples it is not possible to see it because the background and text are black)
-4. `ESC` closes pygame, and gives the user the option to select another set of images
-5. By entering *99*, the user returns to the simulation selection
-5. By entering *0*, the script ends
+4. With the mouse wheel you can zoom, and by pressing left mouse button you can move the image. Pressing `z` resets the zoom
+5. Holding down the right or left arrow and then holding down `a` allows you to quickly scroll between images 
+6. `ESC` closes pygame, and gives the user the option to select another set of images
+7. By entering *99*, the user returns to the simulation selection
+8. By entering *0*, the script ends
